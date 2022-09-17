@@ -3,7 +3,11 @@
   <head>
     
     <style>
-      body {background-color: black;}
+      
+      body {
+        background-color: black;
+        margin: 32px 12px 12px 32px;
+      }
       
       .cropped {
         height: 100%;
@@ -11,8 +15,16 @@
       }
       
       .sized {
-        width: 150px; 
-        height: 150px;
+		  object-fit: cover;
+		  object-position: center;
+		  height: 100px;
+		  width: 100px;
+		  border-radius: 10px;
+		  margin: 16px;
+      }
+	  
+      a {
+        text-decoration: none;
       }
       
     </style>
@@ -20,13 +32,18 @@
   </head>
 
   <body>
-    <a href="https://news.google.com">Google News</a>
-    <a href="https://www.google.com/finace">Google Finance</a>
-    <a href="">Wordle</a>
+	  
+    <a href="https://news.google.com">
+      <img class="sized" src="pngegg.png"/>
+    </a>
     
-    <img class="sized" src="https://images.news18.com/ibnlive/uploads/2019/06/google-news.jpg"/>
-    <img class="cropped" src="https://ssl.gstatic.com/finance/favicon/finance_496x496.png"/>
-    <img src="https://static01.nyt.com/images/2022/03/02/crosswords/alpha-wordle-icon-new/alpha-wordle-icon-new-square320-v3.png"/>
+    <a href="https://www.google.com/finace">
+      <img class="sized" src="https://ssl.gstatic.com/finance/favicon/finance_496x496.png"/>
+    </a>
+    
+    <a href="">
+      <img class="sized" src="https://static01.nyt.com/images/2022/03/02/crosswords/alpha-wordle-icon-new/alpha-wordle-icon-new-square320-v3.png"/>
+    </a>
     
   </body>
 
