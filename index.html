@@ -5,6 +5,16 @@
     <style>
       body {background-color: black;}
       
+      .cropped {
+        height: 100%;
+        clip-path: circle(20px 50px 10px 0 round 50px);
+      }
+      
+      .sized {
+        width: 150px; 
+        height: 150px;
+      }
+      
     </style>
     
   </head>
@@ -14,8 +24,8 @@
     <a href="https://www.google.com/finace">Google Finance</a>
     <a href="">Wordle</a>
     
-    <img src="https://images.news18.com/ibnlive/uploads/2019/06/google-news.jpg"/>
-    <img src="https://ssl.gstatic.com/finance/favicon/finance_496x496.png"/>
+    <img class="sized" src="https://images.news18.com/ibnlive/uploads/2019/06/google-news.jpg"/>
+    <img class="cropped" src="https://ssl.gstatic.com/finance/favicon/finance_496x496.png"/>
     <img src="https://static01.nyt.com/images/2022/03/02/crosswords/alpha-wordle-icon-new/alpha-wordle-icon-new-square320-v3.png"/>
     
   </body>
