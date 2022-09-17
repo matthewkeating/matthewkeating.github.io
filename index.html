@@ -3,29 +3,30 @@
   <head>
     
     <style>
-      
       body {
-        background-color: black;
-        margin: 32px 12px 12px 32px;
-      }
-      
-      .cropped {
-        height: 100%;
-        clip-path: circle(20px 50px 10px 0 round 50px);
-      }
+		  background-color: black;
+		  margin: 32px 12px 12px 32px;
+	  }
       
       .sized {
 		  object-fit: cover;
 		  object-position: center;
-		  height: 100px;
-		  width: 100px;
+		  height: 300px;
+		  width: 300px;
 		  border-radius: 10px;
 		  margin: 16px;
       }
 	  
-      a {
-        text-decoration: none;
-      }
+	  a {
+		  text-decoration: none;
+	  }
+	  
+	  .footer {
+	     position:absolute;
+	     bottom:0;
+	     width:100%;
+		 text-align: center;
+	  }
       
     </style>
     
@@ -33,17 +34,21 @@
 
   <body>
 	  
+	<div class="footer">
+	  
     <a href="https://news.google.com">
-      <img class="sized" src="pngegg.png"/>
-    </a>
+		<img class="sized" src="pngegg.png"/>
+	</a>
     
-    <a href="https://www.google.com/finace">
-      <img class="sized" src="https://ssl.gstatic.com/finance/favicon/finance_496x496.png"/>
-    </a>
+	<a href="https://www.google.com/finace">
+		<img class="sized" src="https://ssl.gstatic.com/finance/favicon/finance_496x496.png"/>
+	</a>
     
-    <a href="">
-      <img class="sized" src="https://static01.nyt.com/images/2022/03/02/crosswords/alpha-wordle-icon-new/alpha-wordle-icon-new-square320-v3.png"/>
-    </a>
+	<a href="">
+		<img class="sized" src="https://static01.nyt.com/images/2022/03/02/crosswords/alpha-wordle-icon-new/alpha-wordle-icon-new-square320-v3.png"/>
+	</a>
+	
+	</div>
     
   </body>
 
